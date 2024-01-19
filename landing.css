@@ -133,6 +133,7 @@ html {
     margin-top: 700px;
     position: absolute;
     transition: ease-in-out 2sec;
+    left: 0;
 }
 
 .card {
@@ -145,6 +146,7 @@ html {
     height: 450px;
     transition: ease-in-out 2sec;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 0;
 }
 
 .card:hover {
@@ -171,34 +173,6 @@ html {
     margin-bottom: 15px;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    top: 130%;
-    position: fixed;
-    width: 97%;
-    right: 30px;
-    padding-right: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.footer-column {
-    flex: 1;
-    padding: 0 20px;
-}
-
-.footer-column a {
-    text-decoration: none;
-    font-style: italic;
-    color: #ddd;
-}
 
 /* Responsive styles for extremely small screens (e.g., smartwatches) */
 @media (max-width: 200px) {
@@ -208,15 +182,18 @@ html {
     }
 
     .navbar-logo img {
-        height: 20px; 
+        height: 20px;
     }
 
     .navbar ul li a {
-        padding: 4px 8px; 
-        font-size: 10px; 
+        padding: 4px 8px;
+        font-size: 10px;
     }
 
-    .container, .content, .vector-graphic, .card-container {
+    .container,
+    .content,
+    .vector-graphic,
+    .card-container {
         flex-direction: column;
         width: 100%;
         height: auto;
@@ -224,35 +201,22 @@ html {
         justify-content: center;
     }
 
-    .content, .vector-graphic, .card {
-        position: static; 
-        width: 90%; 
+    .content,
+    .vector-graphic,
+    .card {
+        position: static;
+        width: 90%;
     }
 
     .card {
-        height: auto; 
-        margin-bottom: 10px; 
+        height: auto;
+        margin-bottom: 10px;
     }
 
     .press {
-        padding: 8px 16px; 
-        font-size: 12px; 
+        padding: 8px 16px;
+        font-size: 12px;
     }
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        top: auto;
-        position: static;
-        width: 100%;
-    }
-
-    .footer-column {
-        padding: 5px; 
-        text-align: center; 
-    }
-    
 
     .card-container {
         flex-direction: column;
@@ -260,33 +224,31 @@ html {
         justify-content: flex-start;
         margin-top: 20px;
         gap: 10px;
-        position: static; 
-        padding: 10px 0; 
+        position: static;
+        padding: 10px 0;
     }
 
     .card {
-        width: 90%; 
-        height: auto; 
-        margin-bottom: 10px; 
-        top: auto; 
-        transition: none; 
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        top: auto;
+        transition: none;
     }
 
     .card-image {
-        height: 120px; 
+        height: 120px;
     }
 
     .card-content {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .card-content h3 {
-        font-size: 12px; 
+        font-size: 12px;
     }
 
     .card-content p {
-        font-size: 10px; 
+        font-size: 10px;
     }
 }
-
-

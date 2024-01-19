@@ -200,25 +200,56 @@ html {
     color: #ddd;
 }
 
-/* Responsive styles for small screens */
-@media (max-width: 480px) {
+/* Responsive styles for extremely small screens (e.g., smartwatches) */
+@media (max-width: 200px) {
     .navbar ul {
         flex-direction: column;
+        align-items: center;
     }
 
-    .container {
+    .navbar-logo img {
+        height: 20px; /* Smaller logo for small screens */
+    }
+
+    .navbar ul li a {
+        padding: 4px 8px; /* Smaller padding for navigation links */
+        font-size: 10px; /* Smaller font size */
+    }
+
+    .container, .content, .vector-graphic, .card-container {
         flex-direction: column;
+        width: 100%;
         height: auto;
+        align-items: center;
+        justify-content: center;
     }
 
-    .content,
-    .vector-graphic {
+    .content, .vector-graphic, .card {
+        position: static; /* Remove absolute positioning */
+        width: 90%; /* Adjust width for small screens */
+    }
+
+    .card {
+        height: auto; /* Adjust height for content */
+        margin-bottom: 10px; /* Add some space between cards */
+    }
+
+    .press {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 12px; /* Smaller font size for the button */
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        top: auto;
+        position: static;
         width: 100%;
     }
 
-    .vector-graphic {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        order: -1;
+    .footer-column {
+        padding: 5px; /* Adjust padding for footer columns */
+        text-align: center; /* Center align text */
     }
 }

@@ -19,6 +19,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .navbar-logo {
